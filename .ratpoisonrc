@@ -1,0 +1,50 @@
+startup_message off
+escape Super_L
+
+exec xrandr --dpi 100
+#exec setxkbmap us dvorak-l 
+exec rpws init 4 -k
+exec xsetroot -cursor_name left_ptr
+exec compton --opacity-rule 99:'class_g *= "Mplayer"' --opacity-rule 99:'class_g *= "mpv"'
+exec feh --bg-scale /home/pix/wallpaper/shot101.png
+exec /home/svarog/bin/dzconky.sh
+exec /home/svarog/bin/dzconkbot.sh
+exec /home/svarog/bin/mpdconky.sh
+exec xset -dpms; xset s off
+exec tinywm
+
+bind u exec urxvt
+bind m exec rofi -show run -regex -i -location 8 -lines 60 -width 500 -font "Fantasque Sans Mono 10" -hide-scrollbar -color-enabled -color-normal "#000000,#95a7cc,#282828,#4b548e,#3f9fe2" -color-window "#000000,#00ffb4,#ffffff" -color-active "#3f9fe2,#4b548e,#000000,#4b548e" -color-urgent "#000000,#00ffb4,#3f9fe2" -bw 0 -line-margin 1 -separator-style "none" -no-levenshtein-sort "$@"
+bind c exec clerk
+bind Escape abort
+bind F1 exec rpws 1
+bind F2 exec rpws 2
+bind F3 exec rpws 3
+bind F4 exec rpws 4
+bind F5 exec ratpoison -c "select -" -c "only " -c "hsplit 3/11" -c next -c "focusright" -c next -c "hsplit 5/8" -c next -c "vsplit"
+
+#definekey top F1 exec rpws 1
+#definekey top F2 exec rpws 2
+#definekey top F3 exec rpws 3
+#definekey top F4 exec rpws 4
+
+set font "Fantasqe Sans Mono 10"
+set winfmt %n %t
+set inputwidth 350
+set fgcolor #fff
+set bgcolor #000
+#set fwcolor #212121
+#set bwcolor #212121
+set waitcursor 3
+set transgravity center
+set border 2
+set barinpadding 3
+set barborder 1
+set barpadding 2 2
+set bargravity center
+set padding 3 20 0 20
+
+unmanage MPlayer
+unmanage Color picker
+unmanage feh
+

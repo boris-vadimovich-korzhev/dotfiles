@@ -1,0 +1,122 @@
+URxvt*termName: screen-256color
+!URxvt.font: xft:RoughTypewriter:size=10
+!URxvt.boldFont: xft:Old typewriter:style=bold:size=10
+URxvt.font:xft:Fantasque Sans Mono:antialias=true:size=10, \
+		   xft:Font Awesome:style=Regular:pixelsize=6, \
+		   xft:Terminus:pixeleize=9, \
+		   xft:FreeSerif:style=Regular, \
+		   xft:DejaVuSans:style=Regular, \
+		   xft:Bitstream Vera Sans Mono:style=Regular, \
+		   xft:Courier New:style=Regular, \
+		   xft:Andale Mono:style=Regular, \
+		   xft:FreeMono:style=Regular, \
+		   xft:FreeSerif:style=Regular, \
+		   xft:inconsolata:pixeleize=14
+URxvt.boldFont:xft:Fantasque Sans Mono:antialias=true:style=Bold:size=10
+URxvt.italicFont:xft:Fantasque Sans Mono:antialias=true:style=italic:size=10
+URxvt.boldItalicFont:xft:Fantasque Sans Mono:antialias=true:style=boldItalic:size=10
+!URxvt.letterSpace: 0
+!URxvt.Xft.rgba: none
+!URxvt.Xft.hintstyle: hintfull
+URxvt.scrollBar: false
+URxvt.inheritPixmap: true
+URxvt*background: #000000
+URxvt*foreground: #ffffff
+URxvt*cursorBlink: true
+URxvt.cursorColor: #ff0000
+URxvt.cursorColor2: #36ff00
+URxvt.tintColor: #707070
+URxvt*geometry:	125x50
+!URxvt.depth: 32
+URxvt*scrollTtyKeypress: true
+URxvt*underlineColor: white
+URxvt*saveLines: 5000
+URxvt*borderLess: false
+URxvt.borderColor: #212121
+URxvt.externalBorder: 0 
+URxvt.internalBorder: 0
+URxvt.highlightColor: #f00f00
+URxvt.highlightTextColor: #36ff00
+URxvt.pointerBlank: true
+URxvt.perl-ext-common: default,keyboard-select,clipboard,matcher,vtwheel
+URxvt.keysym.M-s: perl:keyboard-select:activate
+URxvt.keysym.M-r: perl:keyboard-select:search
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
+URxvt.urlLauncher: luakit
+URxvt*keysym.F1: \033OP
+URxvt*keysym.F2: \033OQ
+URxvt*keysym.F3: \033OR
+URxvt*keysym.F4: \033OS
+URxvt.keysym.Home: \033[1~
+URxvt.keysym.End: \033[4~
+! change font
+!URxvt.keysym.C-0: command:\033]710;xft:RoughTypewriter:size=10\007\033]711;xft:Old typewriter:style=bold:size=10\007
+!URxvt.keysym.C-1: command:\033]710;xft:Fantasque Sans Mono:size=10\007\033]711;xft:Fantasque Sans Mono:style=bold:size=10\007\033]712;xft:Fantasque Sans Mono:style=italic:size=10\007\033]713;xft:Fantasque Sans Mono:style=boldItalic:size=10\007
+
+
+! ! black
+*.color0:       #000000
+*.color8:       #4d4d4d
+!
+! ! red
+*.color1:       #00F7FF
+*.color9:       #899aff
+!
+! ! green
+*.color2:       #16806E
+*.color10:      #59BC89
+!
+! ! yellow
+*.color3:       #00ffb4
+*.color11:      #7EFF6A
+!
+! ! blue
+*.color4:       #16629A
+*.color12:      #5FC9DF
+!
+! ! magenta
+*.color5:       #6F4CBF
+*.color13:      #848fd3
+!
+! ! cyan
+*.color6:       #3f9fe2
+*.color14:      #bad1ff
+!
+! ! white
+*.color7:       #ffffff
+*.color15:      #edeff2
+!
+
+XTerm*background: #000000
+XTerm*foreground: #ffffff
+XTerm*termName: xterm-256color
+XTerm*utf8: 1
+XTerm*faceName: Fantasque Sans Mono:size=10
+
+! black
+XTerm*color0:     #000000
+XTerm*color8:     #404040
+! red
+XTerm*color1:     #FF0000
+XTerm*color9:     #FF5B00
+! green
+XTerm*color2:     #003864
+XTerm*color10:    #0092FF
+! yellow
+XTerm*color3:     #43FF00
+XTerm*color11:    #FFD700
+! blue
+XTerm*color4:     #0000FF
+XTerm*color12:    #5000FF
+! magenta
+XTerm*color5:     #A700FF
+XTerm*color13:    #FF0095
+! cyan
+XTerm*color6:     #00B7FF
+XTerm*color14:    #00FFEB
+! white
+XTerm*color7:     #FFFFFF
+XTerm*color15:    #FFFFFF
+
+

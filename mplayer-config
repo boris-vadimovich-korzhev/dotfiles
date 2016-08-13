@@ -1,0 +1,11 @@
+# Write your default config options here!
+
+fs=yes
+monitoraspect=16:9
+ao=alsa
+nolirc=yes
+msgcolor=yes
+msgmodule=yes
+#input = file=~/.mplayer_fifo
+noautosub=yes
+
