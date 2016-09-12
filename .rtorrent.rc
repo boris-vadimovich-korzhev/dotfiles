@@ -1,9 +1,9 @@
 # Maximum and minimum number of peers to connect to per torrent.
-min_peers = 5
+min_peers = 1
 max_peers = 9999
 
 # Maximum number of simultanious uploads per torrent.
-max_uploads = 3
+max_uploads = 5
 
 # Global upload and download rate in KiB. "0" for unlimited.
 download_rate = 0
@@ -17,7 +17,7 @@ scgi_local = /home/down/rtorrent/.scgi_local
 log.execute = /home/down/rtorrent/log/execute.log
 
 # Port range to use for listening.
-port_range = 60125-64125
+port_range = 50125-64125
 
 # Start opening ports at a random position within the port range.
 port_random = yes

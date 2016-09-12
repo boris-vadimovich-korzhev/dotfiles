@@ -142,7 +142,7 @@ abstracts = {
   pubnick = "%Z00FFB8$*";
 
   # public message in channel meant for me, $0 = nick mode, $1 = nick
-  menick = "%Z0073FF$*%ZFF0048";
+  menick = "%Zff0000$*%ZFF0048";
 
   # public highlighted message in channel
   # $0 = highlight color, $1 = nick mode, $2 = nick

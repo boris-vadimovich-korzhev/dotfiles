@@ -194,7 +194,7 @@ defnonblock on
 #
 # break       ^B b
 # clear       C
-# colon       :
+colon       ;
 # copy        ^[ [
 # detach      ^D d
 # digraph     ^V

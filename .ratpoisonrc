@@ -6,10 +6,11 @@ exec xrandr --dpi 100
 exec rpws init 4 -k
 exec xsetroot -cursor_name left_ptr
 exec compton --opacity-rule 99:'class_g *= "Mplayer"' --opacity-rule 99:'class_g *= "mpv"'
-exec feh --bg-scale /home/pix/wallpaper/shot101.png
+exec feh --bg-scale /home/pix/wallpaper/wallhaven-66006.jpg
 exec /home/svarog/bin/dzconky.sh
 exec /home/svarog/bin/dzconkbot.sh
 exec /home/svarog/bin/mpdconky.sh
+exec /home/svarog/bin/task.sh
 exec xset -dpms; xset s off
 exec tinywm
 
@@ -42,9 +43,8 @@ set barinpadding 3
 set barborder 1
 set barpadding 2 2
 set bargravity center
-set padding 3 20 0 20
+set padding 0 18 0 18
 
 unmanage MPlayer
-unmanage Color picker
 unmanage feh
 
