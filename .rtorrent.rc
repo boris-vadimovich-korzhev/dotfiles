@@ -10,11 +10,11 @@ download_rate = 0
 upload_rate = 0
 
 # Default directory to save the downloaded torrents.
-directory = /home/down/rtorrent/rDownloads
-session = /home/down/rtorrent/session
-scgi_local = /home/down/rtorrent/.scgi_local
+directory = /home/svarog/Downloads/rtorrent/rDownloads
+session = /home/svarog/Downloads/rtorrent/session
+scgi_local = /home/svarog/Downloads/rtorrent/.scgi_local
 ##scgi_port = localhost:5099
-log.execute = /home/down/rtorrent/log/execute.log
+log.execute = /home/svarog/Downloads/rtorrent/log/execute.log
 
 # Port range to use for listening.
 port_range = 50125-64125

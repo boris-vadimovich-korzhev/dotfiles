@@ -62,6 +62,13 @@ set foldmethod=manual
 set noshowmode
 set term=rxvt-unicode-256color
 set clipboard+=unnamed
+set mouse=a
+set ttymouse=xterm2
+set fillchars+=vert:█
+set backspace=indent,eol,start
+set showcmd
+set showmatch
+set encoding=utf8
 
 
 """ syntax
@@ -69,6 +76,7 @@ syntax enable
 autocmd BufRead,BufNewFile *.conf setf dosini
 autocmd BufRead,BufNewFile config setf dosini
 autocmd BufRead,BufNewFile *.txt setf dosbatch
+autocmd FileType text setlocal textwidth=78
 
 
 """ cmd
@@ -182,6 +190,8 @@ let g:ctrlp_cache_dir = $HOME.'/.cache/ctrlp'
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_lazy_update = 1
 let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:25,results:100'
+let g:ctrlp_by_filename = 1
+let g:ctrlp_max_height = 35
 " syntastic
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -198,6 +208,9 @@ nnoremap <F5> :GundoToggle<CR>
 let g:gundo_width = 30
 let g:gundo_preview_height = 30
 let g:gundo_preview_bottom = 0
+" NERDTree
+let NERDTreeShowHidden=1
+let NERDTreeShowLineNumbers=0
 
 """ color
 hi Normal ctermbg=none

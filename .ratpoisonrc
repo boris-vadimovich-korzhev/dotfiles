@@ -5,8 +5,8 @@ exec xrandr --dpi 100
 #exec setxkbmap us dvorak-l 
 exec rpws init 4 -k
 exec xsetroot -cursor_name left_ptr
-exec compton --opacity-rule 99:'class_g *= "Mplayer"' --opacity-rule 99:'class_g *= "mpv"'
-exec feh --bg-scale /home/pix/wallpaper/wallhaven-66006.jpg
+exec compton -o 0.0 --opacity-rule 99:'class_g *= "Mplayer"' --opacity-rule 99:'class_g *= "mpv"' --opacity-rule 99:'class_g *= "Mirage"'
+exec feh --bg-scale /home/Data/Pictures/wallpaper/road.jpg
 exec /home/svarog/bin/dzconky.sh
 exec /home/svarog/bin/dzconkbot.sh
 exec /home/svarog/bin/mpdconky.sh
@@ -15,36 +15,42 @@ exec xset -dpms; xset s off
 exec tinywm
 
 bind u exec urxvt
-bind m exec rofi -show run -regex -i -location 8 -lines 60 -width 500 -font "Fantasque Sans Mono 10" -hide-scrollbar -color-enabled -color-normal "#000000,#95a7cc,#282828,#4b548e,#3f9fe2" -color-window "#000000,#00ffb4,#ffffff" -color-active "#3f9fe2,#4b548e,#000000,#4b548e" -color-urgent "#000000,#00ffb4,#3f9fe2" -bw 0 -line-margin 1 -separator-style "none" -no-levenshtein-sort "$@"
+bind m exec rofi -show run -regex -i -location 8 -lines 68 -width 500 -font "Fantasque Sans Mono 9" -hide-scrollbar -color-enabled -color-normal "#000000,#95a7cc,#282828,#4b548e,#3f9fe2" -color-window "#000000,#00ffb4,#ffffff" -color-active "#3f9fe2,#4b548e,#000000,#4b548e" -color-urgent "#000000,#00ffb4,#3f9fe2" -bw 0 -line-margin 1 -separator-style "none" -no-levenshtein-sort "$@"
 bind c exec clerk
 bind Escape abort
 bind F1 exec rpws 1
 bind F2 exec rpws 2
 bind F3 exec rpws 3
 bind F4 exec rpws 4
-bind F5 exec ratpoison -c "select -" -c "only " -c "hsplit 3/11" -c next -c "focusright" -c next -c "hsplit 5/8" -c next -c "vsplit"
+#bind F5 exec ratpoison -c "select -" -c "only " -c "hsplit 3/11" -c next -c "focusright" -c next -c "hsplit 5/8" -c next -c "vsplit"
+
+#bind M-! to store the current frame layout in slot #1
+bind  F11 exec $RATPOISON -c "setenv fs1 `$RATPOISON -c 'fdump'`"
+#bind M-1 to restore the frame layout in slot #1
+bind F12 exec $RATPOISON -c "frestore `$RATPOISON -c 'getenv fs1'`"
 
 #definekey top F1 exec rpws 1
 #definekey top F2 exec rpws 2
 #definekey top F3 exec rpws 3
 #definekey top F4 exec rpws 4
 
-set font "Fantasqe Sans Mono 10"
+set font xft:FantasqueSansMono:size=9
 set winfmt %n %t
 set inputwidth 350
 set fgcolor #fff
-set bgcolor #000
-#set fwcolor #212121
-#set bwcolor #212121
+set bgcolor #ff0000
+set fwcolor #fff
+set bwcolor #fff
 set waitcursor 3
 set transgravity center
-set border 2
-set barinpadding 3
+set border 5
+set barpadding 5 5
+set barinpadding 1
 set barborder 1
-set barpadding 2 2
 set bargravity center
-set padding 0 18 0 18
+set padding 4 20 2 23
 
-unmanage MPlayer
-unmanage feh
+#unmanage MPlayer
+#unmanage feh
+
 

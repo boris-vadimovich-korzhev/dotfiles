@@ -1,7 +1,7 @@
 URxvt*termName: screen-256color
 !URxvt.font: xft:RoughTypewriter:size=10
 !URxvt.boldFont: xft:Old typewriter:style=bold:size=10
-URxvt.font:xft:Fantasque Sans Mono:antialias=true:size=10, \
+URxvt.font:xft:Fantasque Sans Mono:antialias=true:size=9, \
 		   xft:Font Awesome:style=Regular:pixelsize=6, \
 		   xft:Terminus:pixeleize=9, \
 		   xft:FreeSerif:style=Regular, \
@@ -12,9 +12,9 @@ URxvt.font:xft:Fantasque Sans Mono:antialias=true:size=10, \
 		   xft:FreeMono:style=Regular, \
 		   xft:FreeSerif:style=Regular, \
 		   xft:inconsolata:pixeleize=14
-URxvt.boldFont:xft:Fantasque Sans Mono:antialias=true:style=Bold:size=10
-URxvt.italicFont:xft:Fantasque Sans Mono:antialias=true:style=italic:size=10
-URxvt.boldItalicFont:xft:Fantasque Sans Mono:antialias=true:style=boldItalic:size=10
+URxvt.boldFont:xft:Fantasque Sans Mono:antialias=true:style=Bold:size=9
+URxvt.italicFont:xft:Fantasque Sans Mono:antialias=true:style=italic:size=9
+URxvt.boldItalicFont:xft:Fantasque Sans Mono:antialias=true:style=boldItalic:size=9
 !URxvt.letterSpace: 0
 !URxvt.Xft.rgba: none
 !URxvt.Xft.hintstyle: hintfull
