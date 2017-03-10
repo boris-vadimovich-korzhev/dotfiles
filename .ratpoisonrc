@@ -5,14 +5,15 @@ exec xrandr --dpi 100
 #exec setxkbmap us dvorak-l 
 exec rpws init 4 -k
 exec xsetroot -cursor_name left_ptr
-exec compton -o 0.0 --opacity-rule 99:'class_g *= "Mplayer"' --opacity-rule 99:'class_g *= "mpv"' --opacity-rule 99:'class_g *= "Mirage"'
-exec feh --bg-scale /home/Data/Pictures/wallpaper/road.jpg
+exec compton -o 0.0 --opacity-rule 99:'class_g *= "Mplayer"' --opacity-rule 99:'class_g *= "mpv"' --opacity-rule 99:'class_g *= "Mirage"' --opacity-rule 99:'class_g *= "Gthumb"'
+exec feh --bg-center /home/Data/Pictures/wallpaper/wallhaven-107862.jpg
 exec /home/svarog/bin/dzconky.sh
 exec /home/svarog/bin/dzconkbot.sh
 exec /home/svarog/bin/mpdconky.sh
 exec /home/svarog/bin/task.sh
 exec xset -dpms; xset s off
 exec tinywm
+#exec xmodmap -e "pointer = 3 2 1" 
 
 bind u exec urxvt
 bind m exec rofi -show run -regex -i -location 8 -lines 68 -width 500 -font "Fantasque Sans Mono 9" -hide-scrollbar -color-enabled -color-normal "#000000,#95a7cc,#282828,#4b548e,#3f9fe2" -color-window "#000000,#00ffb4,#ffffff" -color-active "#3f9fe2,#4b548e,#000000,#4b548e" -color-urgent "#000000,#00ffb4,#3f9fe2" -bw 0 -line-margin 1 -separator-style "none" -no-levenshtein-sort "$@"
@@ -51,6 +52,7 @@ set bargravity center
 set padding 4 20 2 23
 
 #unmanage MPlayer
-#unmanage feh
+unmanage feh
+unmanage Feh
 
 
